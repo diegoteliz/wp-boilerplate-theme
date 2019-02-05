@@ -1,5 +1,55 @@
-.tmp/
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore node modules
 node_modules/
 
-*.log
-.DS_Store
+# ignore other files
+.htaccess
+
+##### WORDPRESS #####
+# ignore environment files
+wp-config.php
+
+# ignore WordPress framework files
+/wp-admin/
+/wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# ignore everything in the "wp-content" directory, except website themes
+/wp-content/*
+!/wp-content/themes/
+
+# ignore default themes
+/wp-content/themes/twenty*/
